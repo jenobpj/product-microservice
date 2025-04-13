@@ -51,6 +51,8 @@ public class AddressService {
            future.whenComplete((result, ex) -> {
                if (ex == null) {
                    System.out.println("Message sent to Kafka with offset: " + result.getRecordMetadata().offset());
+                   System.out.println("Hai everyone");
+                   System.out.println("Helooo");
                } else {
                    // Log the error if the Kafka message failed, without affecting the main process
                    System.err.println("Unable to send the message to Kafka: " + ex.getMessage());
